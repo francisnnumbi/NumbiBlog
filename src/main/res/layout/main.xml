@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-autp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/col">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<include
+			android:id="@+id/toolbar"
+			layout="@layout/toolbar"/>
+
+		<ProgressBar
+			android:id="@+id/mainProgressBar"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="30dp"
+			android:layout_width="match_parent"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<WebView
+			android:id="@+id/mainWebView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+

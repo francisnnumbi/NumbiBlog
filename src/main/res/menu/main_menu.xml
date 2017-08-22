@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/mm_refresh"
+				app:showAsAction="always"
+				android:icon="@mipmap/refresh28px"
+        android:title="Refresh"/>
+			<item
+				android:id="@+id/mm_exit"
+				android:title="Exit"/>
+    
+</menu>
